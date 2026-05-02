@@ -42,7 +42,7 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
                 WhatsApp
               </a>
               <a
-                href="https://www.facebook.com/share/18oT7nVZPU/"
+                href="https://m.me/100083546743661"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-label-bold text-white text-lg transition-all active:scale-95 shadow-xl bg-[#1877F2]"

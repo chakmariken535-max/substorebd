@@ -53,7 +53,7 @@ export default function SupportPage() {
               WhatsApp
             </Link>
             <Link
-              href="https://www.facebook.com/share/18oT7nVZPU/"
+              href="https://m.me/100083546743661"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-4 bg-[#1877F2] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-[#1877F2]/20"

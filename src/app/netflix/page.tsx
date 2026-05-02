@@ -23,7 +23,7 @@ export default function NetflixPage() {
               <a href={getWhatsAppLink('Netflix', 'Best Plan', 'Contact Us')} className="inline-flex items-center gap-2 bg-[#25D366] text-white font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-[#25D366]/30">
                 <span className="material-symbols-outlined">whatsapp</span>WhatsApp
               </a>
-              <a href="https://www.facebook.com/share/18oT7nVZPU/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#1877F2] text-white font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-[#1877F2]/30">
+              <a href="https://m.me/100083546743661" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#1877F2] text-white font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-[#1877F2]/30">
                 <span className="material-symbols-outlined">forum</span>Facebook
               </a>
               <a href="/pricing" className="border border-white/20 bg-white/5 backdrop-blur-md text-white font-label-bold px-7 py-3 rounded-xl text-base hover:bg-white/10 transition-all">Compare Plans</a>

@@ -46,7 +46,7 @@ export default function Navbar() {
               <span className="hidden sm:inline">WhatsApp</span>
             </Link>
             <Link
-              href="https://www.facebook.com/share/18oT7nVZPU/"
+              href="https://m.me/100083546743661"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 md:px-5 py-2 bg-[#1877F2] text-white font-label-bold rounded-lg active:scale-95 transform transition-transform shadow-lg shadow-[#1877F2]/20 flex items-center gap-1.5 text-sm md:text-base whitespace-nowrap"
