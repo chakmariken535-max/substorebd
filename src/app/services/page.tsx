@@ -6,7 +6,7 @@ const streaming = [
   { slug: 'prime-video', name: 'Amazon Prime', image: '/images/amazon-prime.jpg', badge: 'HD', badgeColor: '#00A8E1', tags: ['Prime Video', 'Music'], price: '120৳', priceLabel: '1 Screen / Month', iconColor: '#00A8E1', href: '/service/prime-video' },
   { slug: 'crunchyroll', name: 'Crunchyroll', image: '/images/crunchyroll.jpg', badge: 'Anime', badgeColor: '#F47521', tags: ['3 Screens', 'Offline View'], price: '160৳', priceLabel: '1 Screen / Month', iconColor: '#F47521', href: '/service/crunchyroll' },
   { slug: 'chorki', name: 'Chorki', image: '/images/chorki.jpg', badge: 'Bangla', badgeColor: '#8E24AA', tags: ['Local Content'], price: '170৳', priceLabel: '1 Month', iconColor: '#8E24AA', href: '/service/chorki' },
-  { slug: 'ullu', name: 'Ullu Premium', image: '/images/ullu.jpg', badge: null, badgeColor: '', tags: ['Original Content'], price: 'Ask Price', priceLabel: 'Starting from', iconColor: '#FF6B35', href: '/service/ullu' },
+  { slug: 'ullu', name: 'Ullu Premium', image: '/images/ullu.jpg', badge: null, badgeColor: '', tags: ['Original Content'], price: '199৳', priceLabel: '1 Month', iconColor: '#FF6B35', href: '/service/ullu' },
   { slug: 'kooku', name: 'Kooku Premium', image: '/images/kooku.jpg', badge: null, badgeColor: '', tags: ['Movies'], price: '160৳', priceLabel: '1 Month', iconColor: '#FF4500', href: '/service/kooku' },
   { slug: 'bongo', name: 'Bongo', image: '/images/bongo.jpg', badge: null, badgeColor: '', tags: ['Live TV'], price: 'Ask Price', priceLabel: 'Starting from', iconColor: '#E91E63', href: '/service/bongo' },
   { slug: 'disney-plus-hotstar', name: 'Disney+ Hotstar', image: '/images/netflix-hero.png', badge: 'Movies', badgeColor: '#1F3C73', tags: ['Live Sports', 'Specials'], price: '190৳', priceLabel: '1 Month', iconColor: '#1F3C73', href: '/service/disney-plus-hotstar' },
@@ -16,12 +16,13 @@ const gaming = [
   { slug: 'pubg-mobile', name: 'PUBG Mobile UC', image: '/images/pubg-mobile.jpg', badge: 'Instant', badgeColor: '#EAB308', tags: ['660 UC', 'Global'], price: 'Ask Price', priceLabel: 'Game Credits', iconColor: '#EAB308', href: '/service/pubg-mobile' },
   { slug: 'free-fire', name: 'Free Fire Diamonds', image: '/images/free-fire.png', badge: 'Battle Royale', badgeColor: '#DC2626', tags: ['100+20 Bonus', 'UID Top-up'], price: 'Ask Price', priceLabel: 'Game Credits', iconColor: '#DC2626', href: '/service/free-fire' },
   { slug: 'mobile-legend', name: 'Mobile Legends', image: '/images/mobile-legend.jpg', badge: null, badgeColor: '', tags: ['Diamonds'], price: 'Ask Price', priceLabel: 'Game Credits', iconColor: '#3B82F6', href: '/service/mobile-legend' },
+  { slug: 'efootball-coin', name: 'E Football Coin', image: '/images/pubg-mobile.jpg', badge: 'Game Credits', badgeColor: '#013369', tags: ['Coins'], price: '240৳', priceLabel: '130 Coins', iconColor: '#013369', href: '/service/efootball-coin' },
 ];
 
 const social = [
   { slug: 'tango-coins', name: 'Tango Coins', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Live Stream'], price: 'Ask Price', priceLabel: 'App Credits', iconColor: '#F97316', href: '/service/tango-coins' },
   { slug: 'bigo-diamonds', name: 'Bigo Diamonds', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Bigo Live'], price: '145৳', priceLabel: 'Starting from', iconColor: '#A855F7', href: '/service/bigo-diamonds' },
-  { slug: 'tiktok-coins', name: 'TikTok Coins', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Gifts'], price: 'Ask Price', priceLabel: 'App Credits', iconColor: '#EC4899', href: '/service/tiktok-coins' },
+  { slug: 'tiktok-coins', name: 'TikTok Coins', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Gifts'], price: '310৳', priceLabel: '140 Coins', iconColor: '#EC4899', href: '/service/tiktok-coins' },
   { slug: 'telegram-premium', name: 'Telegram Premium', image: '/images/telegram-premium.png', badge: 'Premium', badgeColor: '#24A1DE', tags: ['4GB Uploads', 'Faster Speed'], price: '780৳', priceLabel: 'Starting from', iconColor: '#24A1DE', href: '/service/telegram-premium' },
 ];
 
@@ -118,7 +119,7 @@ export default function ServicesPage() {
                 <span className="material-symbols-outlined text-sm">sports_esports</span> Gaming
               </h3>
               <div className="space-y-2">
-                {['Free Fire', 'PUBG Mobile', 'Mobile Legend'].map((item) => (
+                {['PUBG Mobile', 'Free Fire', 'Mobile Legends', 'E Football'].map((item) => (
                   <label key={item} className="flex items-center gap-3 cursor-pointer group">
                     <input type="checkbox" className="w-4 h-4 rounded border-white/20 bg-white/5" />
                     <span className="text-sm text-tertiary group-hover:text-white transition-colors">{item}</span>

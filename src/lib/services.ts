@@ -165,7 +165,11 @@ export const services: Record<string, Service> = {
     badge: 'Original',
     description: 'Stream exclusive Ullu originals, web series, and bold entertainment content.',
     features: ['Exclusive originals', 'Web series', 'HD streaming', 'Multi-device'],
-    plans: [{ duration: '1 Month', screens: '1 Screen', price: 'Ask Price' }],
+    plans: [
+      { duration: '1 Month', screens: '1 Screen', price: '199৳' },
+      { duration: '6 Months', screens: '1 Screen', price: '1,200৳', popular: true },
+      { duration: '12 Months', screens: '1 Screen', price: '2,300৳' }
+    ],
     image: '/images/ullu.jpg',
   },
   kooku: {
@@ -254,6 +258,23 @@ export const services: Record<string, Service> = {
     ],
     image: '/images/mobile-legend.jpg',
   },
+  'efootball-coin': {
+    slug: 'efootball-coin',
+    name: 'E Football Coin',
+    color: '#013369',
+    icon: 'sports_soccer',
+    badge: 'Game Credits',
+    description: 'Top up your eFootball account with coins to sign players and unlock premium content.',
+    features: ['Instant delivery', 'Global Top-up', 'Secure transaction', 'All packages'],
+    plans: [
+      { duration: 'Instant', screens: '130 Coins', price: '240৳' },
+      { duration: 'Instant', screens: '260 Coins', price: '480৳' },
+      { duration: 'Instant', screens: '300 Coins', price: '505৳', popular: true },
+      { duration: 'Instant', screens: '550 Coins', price: '680৳' },
+      { duration: 'Instant', screens: '1040 Coins', price: '1,234৳' }
+    ],
+    image: '/images/pubg-mobile.jpg', // Placeholder, recommend changing later
+  },
   'tango-coins': {
     slug: 'tango-coins',
     name: 'Tango Coins',
@@ -295,7 +316,15 @@ export const services: Record<string, Service> = {
     badge: 'Gifts',
     description: 'Buy TikTok coins to send gifts during live streams and support your favorite creators.',
     features: ['Instant delivery', 'Send live gifts', 'Support creators', 'All packages'],
-    plans: [{ duration: 'Instant', screens: 'Various packs', price: 'Ask Price' }],
+    plans: [
+      { duration: 'Instant', screens: '140 Coins', price: '310৳' },
+      { duration: 'Instant', screens: '240 Coins', price: '410৳' },
+      { duration: 'Instant', screens: '350 Coins', price: '650৳', popular: true },
+      { duration: 'Instant', screens: '700 Coins', price: '1,290৳' },
+      { duration: 'Instant', screens: '1400 Coins', price: '2,450৳' },
+      { duration: 'Instant', screens: '3500 Coins', price: '4,950৳' },
+      { duration: 'Instant', screens: '7000 Coins', price: '11,900৳' }
+    ],
     image: '/images/coins-generic.png',
   },
   'telegram-premium': {
