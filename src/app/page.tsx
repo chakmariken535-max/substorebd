@@ -125,31 +125,31 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-40 px-8">
-        <div className="max-w-[1200px] mx-auto glass p-20 md:p-32 rounded-[64px] border border-white/10 relative overflow-hidden text-center space-y-12">
+      <section className="py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-[900px] mx-auto glass p-8 md:p-16 rounded-3xl border border-white/10 relative overflow-hidden text-center space-y-8">
           <div className="absolute inset-0 bg-gradient-to-br from-primary-container/30 via-transparent to-transparent pointer-events-none" />
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#E50914]/20 rounded-full blur-[120px]" />
-          
-          <div className="max-w-3xl mx-auto space-y-8 relative z-10">
-            <h2 className="font-display-md text-[56px] md:text-[72px] leading-[1] text-white font-black tracking-tighter">
+          <div className="absolute -top-16 -right-16 w-64 h-64 bg-[#E50914]/20 rounded-full blur-[100px]" />
+
+          <div className="relative z-10 space-y-4">
+            <h2 className="text-3xl md:text-5xl text-white font-black tracking-tighter leading-tight">
               Ready to upgrade your <br />
               <span className="text-primary-container">entertainment?</span>
             </h2>
-            <p className="text-tertiary text-2xl opacity-80 max-w-xl mx-auto">
+            <p className="text-tertiary text-base md:text-lg w-full max-w-lg mx-auto px-4">
               Join thousands of happy subscribers and start watching today.
             </p>
           </div>
-          
-          <div className="flex flex-col sm:flex-row gap-8 justify-center relative z-10">
-            <Link 
-              href="/services" 
-              className="px-16 py-6 bg-white text-black rounded-3xl font-black text-2xl hover:scale-110 active:scale-95 transition-all shadow-2xl"
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+            <Link
+              href="/services"
+              className="px-8 md:px-12 py-4 bg-white text-black rounded-2xl font-black text-base md:text-lg hover:scale-105 active:scale-95 transition-all shadow-xl"
             >
               Get Started Now
             </Link>
-            <Link 
-              href="whatsapp://send?phone=8801623246317" 
-              className="px-16 py-6 bg-[#25D366] text-white rounded-3xl font-black text-2xl flex items-center justify-center gap-4 hover:scale-110 active:scale-95 transition-all shadow-2xl shadow-[#25D366]/40"
+            <Link
+              href="whatsapp://send?phone=8801623246317"
+              className="px-8 md:px-12 py-4 bg-[#25D366] text-white rounded-2xl font-black text-base md:text-lg flex items-center justify-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-xl shadow-[#25D366]/40"
             >
               Contact Support
             </Link>
