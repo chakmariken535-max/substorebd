@@ -283,7 +283,14 @@ export const services: Record<string, Service> = {
     badge: 'Live Stream',
     description: 'Send virtual gifts to your favorite Tango live streamers with Tango Coins.',
     features: ['Instant delivery', 'Send gifts', 'Support streamers', 'All packages'],
-    plans: [{ duration: 'Instant', screens: 'Various packs', price: 'Ask Price' }],
+    plans: [
+      { duration: 'Instant', screens: '120 Coins', price: '165৳' },
+      { duration: 'Instant', screens: '600 Coins', price: '750৳' },
+      { duration: 'Instant', screens: '1200 Coins', price: '1,470৳' },
+      { duration: 'Instant', screens: '2600 Coins', price: '2,890৳', popular: true },
+      { duration: 'Instant', screens: '6500 Coins', price: '7,000৳' },
+      { duration: 'Instant', screens: '13500 Coins', price: '14,500৳' },
+    ],
     image: '/images/coins-generic.png',
   },
   'bigo-diamonds': {
