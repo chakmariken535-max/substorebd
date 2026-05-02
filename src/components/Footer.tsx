@@ -36,8 +36,28 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mt-12 pt-8 border-t border-white/5 text-center text-gray-500">
-        © 2024 SubStoreBD. All rights reserved.
+      <div className="mt-12 pt-8 border-t border-white/5 px-8 max-w-[1200px] mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-gray-500 text-sm">© 2025 SubStoreBD. All rights reserved.</p>
+
+          {/* Developer Credit */}
+          <div className="flex items-center gap-3 glass px-5 py-3 rounded-2xl border border-white/10 group hover:border-[#E50914]/30 transition-all duration-300">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#E50914] to-[#ff6b35] flex items-center justify-center text-white text-xs font-black shrink-0">
+              MC
+            </div>
+            <div className="text-left">
+              <p className="text-xs text-gray-500 uppercase tracking-widest font-bold leading-none mb-1">Developer</p>
+              <p className="text-white font-bold text-sm leading-none">Madesh Chakma</p>
+              <a
+                href="mailto:madeshchakma@gmail.com"
+                className="text-[10px] text-gray-500 hover:text-[#E50914] transition-colors"
+              >
+                madeshchakma@gmail.com
+              </a>
+            </div>
+            <span className="material-symbols-outlined text-gray-600 group-hover:text-[#E50914] transition-colors text-base ml-1">code</span>
+          </div>
+        </div>
       </div>
     </footer>
   );
