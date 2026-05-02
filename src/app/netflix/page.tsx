@@ -126,6 +126,7 @@ export default function NetflixPage() {
               <div>
                 <h3 className="font-headline-md text-white">{screens}</h3>
                 <p className="text-tertiary text-label-sm mt-1">Per Month</p>
+              </div>
               <div className="text-3xl font-black text-white">{price}</div>
               <div className="flex gap-2 w-full">
                 <a

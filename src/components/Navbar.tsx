@@ -35,6 +35,7 @@ export default function Navbar() {
             <Link href="/pricing" className="text-gray-400 text-xs font-bold hover:text-white transition-colors">
               Pricing
             </Link>
+          </div>
         </div>
       </div>
     </nav>
