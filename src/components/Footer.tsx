@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="space-y-4">
           <h4 className="text-white font-bold uppercase tracking-wider">Resources</h4>
           <div className="flex flex-col gap-2">
-            <Link href="/services" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">Services</Link>
+            <Link href="/" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">Services</Link>
             <Link href="#" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">Help Center</Link>
             <Link href="#" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">FAQ</Link>
             <Link href="/support" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">Support</Link>

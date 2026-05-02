@@ -14,7 +14,7 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex gap-8 items-center">
-          <Link href="/services" className="text-gray-400 font-medium hover:text-white transition-all duration-300">
+          <Link href="/" className="text-gray-400 font-medium hover:text-white transition-all duration-300">
             Services
           </Link>
           <Link href="/pricing" className="text-gray-400 font-medium hover:text-white transition-all duration-300">
@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           {/* Mobile nav links */}
           <div className="flex md:hidden gap-3 items-center mr-1">
-            <Link href="/services" className="text-gray-400 text-xs font-bold hover:text-white transition-colors">
+            <Link href="/" className="text-gray-400 text-xs font-bold hover:text-white transition-colors">
               Services
             </Link>
             <Link href="/pricing" className="text-gray-400 text-xs font-bold hover:text-white transition-colors">

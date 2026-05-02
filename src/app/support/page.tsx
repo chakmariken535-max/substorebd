@@ -53,7 +53,7 @@ export default function SupportPage() {
               Chat on WhatsApp
             </Link>
             <Link
-              href="/services"
+              href="/"
               className="px-6 py-4 bg-white/5 border border-white/10 text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/10 active:scale-95 transition-all"
             >
               <span className="material-symbols-outlined">explore</span>
