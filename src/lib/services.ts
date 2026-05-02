@@ -1,8 +1,54 @@
 export const WHATSAPP_NUMBER = '8801623246317';
 
+// Opens native WhatsApp app (not web). Falls back gracefully on desktop.
 export function getWhatsAppLink(service: string, plan: string, price: string) {
-  const msg = `Hello SubStoreBD! 🎬\n\nI want to order:\n*Service:* ${service}\n*Plan:* ${plan}\n*Price:* ${price}\n\nPlease confirm my order. Thank you!`;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+  const msg = buildMessage(service, plan, price);
+  return `whatsapp://send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(msg)}`;
+}
+
+// Fallback web link (used for non-mobile contexts like footer Contact Us)
+export function getWhatsAppWebLink(service?: string, plan?: string, price?: string) {
+  if (service && plan && price) {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildMessage(service, plan, price))}`;
+  }
+  return `https://wa.me/${WHATSAPP_NUMBER}`;
+}
+
+function buildMessage(service: string, plan: string, price: string) {
+  return `Hello SubStoreBD! 🎬\n\nI want to order:\n*Service:* ${service}\n*Plan:* ${plan}\n*Price:* ${price}\n\nPlease confirm my order. Thank you!`;
+}
+
+// Returns a personalized recommendation message shown on the Buy Now button popup/tooltip
+export function getRecommendationMessage(serviceName: string, plan: string, price: string, popular?: boolean): string {
+  if (popular) {
+    return `🔥 Best seller! ${serviceName} (${plan}) — most customers pick this plan. Just ${price} via WhatsApp!`;
+  }
+  const lc = serviceName.toLowerCase();
+  if (lc.includes('netflix')) {
+    return `🎬 Perfect choice! Get Netflix ${plan} for just ${price}. Delivered in under 15 minutes.`;
+  }
+  if (lc.includes('crunchyroll')) {
+    return `🌸 Anime lover? Crunchyroll ${plan} for ${price} — watch simulcasts the same day as Japan!`;
+  }
+  if (lc.includes('prime')) {
+    return `📦 Great deal! Prime Video ${plan} for just ${price}. Movies, shows & live sports included.`;
+  }
+  if (lc.includes('youtube')) {
+    return `▶️ Go ad-free! YouTube Premium ${plan} for ${price}. Background play & YouTube Music included.`;
+  }
+  if (lc.includes('chorki')) {
+    return `🇧🇩 Local favorite! Chorki ${plan} for ${price}. Best Bangla dramas & exclusives.`;
+  }
+  if (lc.includes('bigo')) {
+    return `💎 Gift your favorite streamer! Bigo ${plan} for ${price}. Instant top-up, no account needed.`;
+  }
+  if (lc.includes('telegram')) {
+    return `⭐ Upgrade your Telegram! ${plan} for ${price}. 4GB uploads, faster downloads & no ads.`;
+  }
+  if (lc.includes('free fire') || lc.includes('pubg') || lc.includes('mobile legend')) {
+    return `🎮 Level up! ${serviceName} ${plan} for ${price}. Instant delivery via UID — no login needed.`;
+  }
+  return `✅ Great pick! ${serviceName} ${plan} for ${price}. Order now and get it in minutes.`;
 }
 
 export interface Plan {

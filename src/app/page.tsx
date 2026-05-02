@@ -148,7 +148,7 @@ export default function LandingPage() {
               Get Started Now
             </Link>
             <Link 
-              href="https://wa.me/01623246317" 
+              href="whatsapp://send?phone=8801623246317" 
               className="px-16 py-6 bg-[#25D366] text-white rounded-3xl font-black text-2xl flex items-center justify-center gap-4 hover:scale-110 active:scale-95 transition-all shadow-2xl shadow-[#25D366]/40"
             >
               Contact Support

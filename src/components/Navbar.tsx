@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
         <div className="flex gap-4 items-center">
           <Link 
-            href="https://wa.me/01623246317"
+            href="whatsapp://send?phone=8801623246317"
             className="px-6 py-2 bg-primary-container text-on-primary-container font-label-bold rounded-lg active:scale-95 transform transition-transform shadow-lg shadow-primary-container/20 flex items-center gap-2"
           >
             <span className="material-symbols-outlined text-sm">chat</span>
