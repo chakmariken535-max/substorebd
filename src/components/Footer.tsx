@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full py-10 md:py-12 border-t border-white/10 bg-black font-body-md text-sm">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-[1200px] mx-auto">
-        <div className="space-y-4">
+        <div className="space-y-4 col-span-2 md:col-span-1">
           <div className="flex items-center gap-2 mb-4">
             <img src="/images/logo-icon.png" alt="SubStoreBD" className="h-8 w-auto" />
             <span className="text-xl font-bold text-white">SubStore<span className="text-[#E50914]">BD</span></span>
@@ -28,7 +28,7 @@ export default function Footer() {
             <Link href="/support" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">Support</Link>
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 col-span-2 md:col-span-1">
           <h4 className="text-white font-bold uppercase tracking-wider">Legal</h4>
           <div className="flex flex-col gap-2">
             <Link href="#" className="text-gray-500 hover:text-[#E50914] transition-colors cursor-pointer">Terms of Service</Link>
@@ -41,11 +41,11 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#E50914] to-[#ff6b35] flex items-center justify-center text-white text-xs font-black shrink-0">
                 MC
               </div>
-              <div className="text-left flex-grow">
-                <p className="text-white font-bold text-sm leading-none mb-1">Madesh Chakma</p>
+              <div className="text-left flex-grow min-w-0">
+                <p className="text-white font-bold text-sm leading-none mb-1 truncate">Madesh Chakma</p>
                 <a
                   href="mailto:madeshchakma@gmail.com"
-                  className="text-[10px] text-gray-500 hover:text-[#E50914] transition-colors block"
+                  className="text-[10px] text-gray-500 hover:text-[#E50914] transition-colors block truncate"
                 >
                   madeshchakma@gmail.com
                 </a>
