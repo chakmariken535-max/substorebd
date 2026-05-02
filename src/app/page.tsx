@@ -20,9 +20,9 @@ const gaming = [
 ];
 
 const social = [
-  { slug: 'tango-coins', name: 'Tango Coins', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Live Stream'], price: 'Ask Price', priceLabel: 'App Credits', iconColor: '#F97316', href: '/service/tango-coins' },
-  { slug: 'bigo-diamonds', name: 'Bigo Diamonds', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Bigo Live'], price: '145৳', priceLabel: 'Starting from', iconColor: '#A855F7', href: '/service/bigo-diamonds' },
-  { slug: 'tiktok-coins', name: 'TikTok Coins', image: '/images/coins-generic.png', badge: null, badgeColor: '', tags: ['Gifts'], price: '310৳', priceLabel: '140 Coins', iconColor: '#EC4899', href: '/service/tiktok-coins' },
+  { slug: 'tango-coins', name: 'Tango Coins', image: '/images/coins-generic.png', badge: 'Instant', badgeColor: '#F97316', tags: ['Live Stream'], price: '165৳', priceLabel: 'Starting from', iconColor: '#F97316', href: '/service/tango-coins' },
+  { slug: 'bigo-diamonds', name: 'Bigo Diamonds', image: '/images/coins-generic.png', badge: 'Instant', badgeColor: '#A855F7', tags: ['Bigo Live'], price: '145৳', priceLabel: 'Starting from', iconColor: '#A855F7', href: '/service/bigo-diamonds' },
+  { slug: 'tiktok-coins', name: 'TikTok Coins', image: '/images/coins-generic.png', badge: 'Instant', badgeColor: '#EC4899', tags: ['Gifts'], price: '310৳', priceLabel: '140 Coins', iconColor: '#EC4899', href: '/service/tiktok-coins' },
   { slug: 'telegram-premium', name: 'Telegram Premium', image: '/images/telegram-premium.png', badge: 'Premium', badgeColor: '#24A1DE', tags: ['4GB Uploads', 'Faster Speed'], price: '780৳', priceLabel: 'Starting from', iconColor: '#24A1DE', href: '/service/telegram-premium' },
 ];
 
