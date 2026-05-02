@@ -33,7 +33,7 @@ function ProductCard({ item }: { item: typeof streaming[0] }) {
       className="glass rounded-xl overflow-hidden group hover:scale-[1.02] hover:border-white/20 transition-all duration-300 flex flex-col cursor-pointer"
     >
       <div className="relative h-40 sm:h-48">
-        <img src={item.image} alt={item.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+        <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-all duration-700" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131313] to-transparent" />
         {item.badge && (
           <div
