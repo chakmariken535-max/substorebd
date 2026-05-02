@@ -13,12 +13,12 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative h-[500px] flex items-center overflow-hidden">
+      <section className="relative h-[45vh] md:h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-[#131313] z-10" />
           <img src={service.image} alt={service.name} className="w-full h-full object-cover" />
         </div>
-        <div className="container max-w-[1200px] mx-auto px-8 relative z-20 text-center">
+        <div className="container max-w-[1200px] mx-auto px-4 md:px-8 relative z-20 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             {service.badge && (
               <span
@@ -28,8 +28,8 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
                 {service.badge}
               </span>
             )}
-            <h1 className="font-display-lg text-display-lg text-white">{service.name}</h1>
-            <p className="font-body-lg text-body-lg text-gray-300">{service.description}</p>
+            <h1 className="font-display-lg text-2xl md:text-5xl text-white font-black">{service.name}</h1>
+            <p className="font-body-lg text-sm md:text-base text-gray-300 max-w-2xl mx-auto">{service.description}</p>
             <a
               href={getWhatsAppLink(service.name, 'Best Plan', 'Contact Us')}
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-label-bold text-white text-lg transition-all active:scale-95 shadow-xl"
@@ -45,9 +45,9 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
       </section>
 
       {/* Features */}
-      <section className="max-w-[1200px] mx-auto px-8 py-xl">
-        <h2 className="font-headline-lg text-headline-lg text-white mb-lg text-center">What's Included</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+      <section className="max-w-[1200px] mx-auto px-4 md:px-8 py-10 md:py-16">
+        <h2 className="font-bold text-white text-lg md:text-2xl mb-6 text-center">What's Included</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
           {service.features.map((feature) => (
             <div key={feature} className="glass-card rounded-xl p-md flex flex-col items-center text-center gap-3">
               <div
@@ -65,15 +65,15 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
       </section>
 
       {/* Pricing */}
-      <section className="max-w-[1200px] mx-auto px-8 py-xl">
-        <div className="text-center mb-lg">
-          <h2 className="font-headline-lg text-headline-lg text-white">
+      <section className="max-w-[1200px] mx-auto px-4 md:px-8 py-10 md:py-16">
+        <div className="text-center mb-8">
+          <h2 className="font-bold text-white text-xl md:text-3xl">
             {service.name} Pricing — BDT (৳)
           </h2>
-          <p className="text-tertiary mt-2">Choose a plan and order instantly via WhatsApp.</p>
+          <p className="text-tertiary mt-2 text-sm">Choose a plan and order instantly via WhatsApp.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
           {service.plans.map((plan, i) => {
             const recommendation = getRecommendationMessage(service.name, `${plan.duration} / ${plan.screens}`, plan.price, plan.popular);
             return (

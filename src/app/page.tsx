@@ -11,14 +11,14 @@ export default function LandingPage() {
   return (
     <main className="flex flex-col w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20 px-8">
+      <section className="relative min-h-screen flex items-center pt-16 md:pt-20 px-4 md:px-8">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-primary-container/10 via-background to-background z-10" />
           <div className="absolute top-[10%] left-[5%] w-[40rem] h-[40rem] bg-[#E50914]/20 rounded-full blur-[160px] animate-pulse" />
           <div className="absolute bottom-[10%] right-[5%] w-[40rem] h-[40rem] bg-primary-container/10 rounded-full blur-[160px] animate-pulse delay-1000" />
         </div>
 
-        <div className="max-w-[1200px] mx-auto w-full relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-[1200px] mx-auto w-full relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-center">
           <div className="lg:col-span-7 space-y-10">
             <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 border border-white/10 text-primary-container text-sm font-bold uppercase tracking-[0.2em]">
               <span className="relative flex h-2.5 w-2.5">
@@ -40,17 +40,17 @@ export default function LandingPage() {
               Get instant access to Netflix, Crunchyroll, Prime Video, and Game Credits at the most affordable BDT prices in Bangladesh.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 pt-6">
-              <Link 
-                href="/services" 
-                className="px-12 py-5 bg-primary-container text-on-primary-container rounded-2xl font-black text-xl flex items-center justify-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary-container/40"
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Link
+                href="/services"
+                className="px-8 md:px-12 py-4 md:py-5 bg-primary-container text-on-primary-container rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary-container/40"
               >
                 Explore Services
                 <span className="material-symbols-outlined font-black">arrow_forward</span>
               </Link>
-              <Link 
-                href="/support" 
-                className="px-12 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-bold text-xl flex items-center justify-center gap-3 hover:bg-white/10 hover:border-white/20 active:scale-95 transition-all"
+              <Link
+                href="/support"
+                className="px-8 md:px-12 py-4 md:py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-bold text-lg flex items-center justify-center gap-3 hover:bg-white/10 hover:border-white/20 active:scale-95 transition-all"
               >
                 How to Buy
               </Link>

@@ -9,17 +9,17 @@ export default function PricingPage() {
   const pricingData = Object.values(services);
 
   return (
-    <main className="pt-32 pb-xl px-8 max-w-[1200px] mx-auto min-h-screen">
+    <main className="pt-24 md:pt-32 pb-16 px-4 md:px-8 max-w-[1200px] mx-auto min-h-screen">
       {/* Header */}
-      <div className="text-center mb-xl">
-        <h1 className="font-display-lg text-display-lg text-white mb-base">SubStoreBD Price Chart</h1>
-        <p className="text-tertiary font-body-lg max-w-2xl mx-auto">
+      <div className="text-center mb-8 md:mb-16">
+        <h1 className="text-3xl md:text-5xl font-black text-white mb-3 tracking-tight">SubStoreBD Price Chart</h1>
+        <p className="text-tertiary text-sm md:text-base max-w-2xl mx-auto">
           Get the best value for your favorite streaming services. Premium subscriptions at local competitive rates in BDT (৳).
         </p>
       </div>
 
       {/* Pricing Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         {pricingData.map((service) => (
           <div key={service.slug} className="glass-card rounded-2xl overflow-hidden group hover:border-white/20 transition-all duration-300 flex flex-col">
             {/* Service Header */}

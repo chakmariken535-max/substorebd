@@ -5,33 +5,33 @@ export default function NetflixPage() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="relative h-[716px] flex items-center overflow-hidden">
+      <section className="relative h-[55vh] md:h-[716px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background z-10"></div>
           <div className="absolute inset-0 bg-black/40 z-0"></div>
           <img alt="Netflix Cinematic Backdrop" className="w-full h-full object-cover" src="/images/netflix-hero.png"/>
         </div>
-        <div className="container max-w-[1200px] mx-auto px-8 relative z-20 text-center">
+        <div className="container max-w-[1200px] mx-auto px-4 md:px-8 relative z-20 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="flex items-center justify-center space-x-3">
               <span className="bg-primary-container px-3 py-1 rounded text-label-bold text-on-primary-container">PREMIUM</span>
               <span className="text-secondary font-label-bold">ULTRA HD 4K</span>
             </div>
-            <h1 className="font-display-lg text-display-lg text-white">Netflix Premium Subscription</h1>
-            <p className="font-body-lg text-body-lg text-tertiary-fixed-dim">Experience movies and TV shows in stunning 4K resolution with high dynamic range (HDR) on up to four screens simultaneously. The ultimate cinematic experience at home.</p>
-            <div className="flex items-center justify-center gap-4 pt-4">
-              <a href={getWhatsAppLink('Netflix', 'Best Plan', 'Contact Us')} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary-container text-on-primary-container font-label-bold px-10 py-4 rounded-xl text-lg hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-primary-container/30">
+            <h1 className="font-display-lg text-2xl md:text-5xl text-white font-black">Netflix Premium Subscription</h1>
+            <p className="font-body-lg text-sm md:text-base text-tertiary-fixed-dim max-w-2xl mx-auto">Experience movies and TV shows in stunning 4K resolution with HDR on up to four screens simultaneously.</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
+              <a href={getWhatsAppLink('Netflix', 'Best Plan', 'Contact Us')} className="inline-flex items-center gap-2 bg-primary-container text-on-primary-container font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-primary-container/30">
                 <span className="material-symbols-outlined">whatsapp</span>Buy Now
               </a>
-              <a href="/pricing" className="border border-white/20 bg-white/5 backdrop-blur-md text-white font-label-bold px-10 py-4 rounded-xl text-lg hover:bg-white/10 transition-all">Compare Plans</a>
+              <a href="/pricing" className="border border-white/20 bg-white/5 backdrop-blur-md text-white font-label-bold px-7 py-3 rounded-xl text-base hover:bg-white/10 transition-all">Compare Plans</a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Bento Grid Features */}
-      <section className="max-w-[1200px] mx-auto px-8 py-xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <section className="max-w-[1200px] mx-auto px-4 md:px-8 py-10 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {/* Feature 1 */}
           <div className="md:col-span-2 glass-card rounded-xl p-md flex flex-col justify-between group overflow-hidden">
             <div className="space-y-4">

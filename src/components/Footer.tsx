@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="w-full py-12 border-t border-white/10 bg-black font-body-md text-sm">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-[1200px] mx-auto">
+    <footer className="w-full py-10 md:py-12 border-t border-white/10 bg-black font-body-md text-sm">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-4 md:px-8 max-w-[1200px] mx-auto">
         <div className="space-y-4">
           <div className="flex items-center gap-2 mb-4">
             <img src="/images/logo-icon.png" alt="SubStoreBD" className="h-8 w-auto" />
