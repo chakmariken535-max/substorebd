@@ -35,26 +35,6 @@ export default function Navbar() {
             <Link href="/pricing" className="text-gray-400 text-xs font-bold hover:text-white transition-colors">
               Pricing
             </Link>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Link
-              href="whatsapp://send?phone=8801623246317"
-              className="px-3 md:px-5 py-2 bg-[#25D366] text-white font-label-bold rounded-lg active:scale-95 transform transition-transform shadow-lg shadow-[#25D366]/20 flex items-center gap-1.5 text-sm md:text-base whitespace-nowrap"
-            >
-              <span className="material-symbols-outlined text-sm">chat</span>
-              <span className="hidden sm:inline">WhatsApp</span>
-            </Link>
-            <Link
-              href="https://m.me/100083546743661"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 md:px-5 py-2 bg-[#1877F2] text-white font-label-bold rounded-lg active:scale-95 transform transition-transform shadow-lg shadow-[#1877F2]/20 flex items-center gap-1.5 text-sm md:text-base whitespace-nowrap"
-            >
-              <span className="material-symbols-outlined text-sm">forum</span>
-              <span className="hidden sm:inline">Facebook</span>
-            </Link>
-          </div>
         </div>
       </div>
     </nav>
