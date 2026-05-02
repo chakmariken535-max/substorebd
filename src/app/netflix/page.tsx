@@ -20,8 +20,11 @@ export default function NetflixPage() {
             <h1 className="font-display-lg text-2xl md:text-5xl text-white font-black">Netflix Premium Subscription</h1>
             <p className="font-body-lg text-sm md:text-base text-tertiary-fixed-dim max-w-2xl mx-auto">Experience movies and TV shows in stunning 4K resolution with HDR on up to four screens simultaneously.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
-              <a href={getWhatsAppLink('Netflix', 'Best Plan', 'Contact Us')} className="inline-flex items-center gap-2 bg-primary-container text-on-primary-container font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-primary-container/30">
-                <span className="material-symbols-outlined">whatsapp</span>Buy Now
+              <a href={getWhatsAppLink('Netflix', 'Best Plan', 'Contact Us')} className="inline-flex items-center gap-2 bg-[#25D366] text-white font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-[#25D366]/30">
+                <span className="material-symbols-outlined">whatsapp</span>WhatsApp
+              </a>
+              <a href="https://www.facebook.com/share/18oT7nVZPU/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#1877F2] text-white font-label-bold px-7 py-3 rounded-xl text-base hover:brightness-110 active:scale-95 transition-all shadow-xl shadow-[#1877F2]/30">
+                <span className="material-symbols-outlined">forum</span>Facebook
               </a>
               <a href="/pricing" className="border border-white/20 bg-white/5 backdrop-blur-md text-white font-label-bold px-7 py-3 rounded-xl text-base hover:bg-white/10 transition-all">Compare Plans</a>
             </div>

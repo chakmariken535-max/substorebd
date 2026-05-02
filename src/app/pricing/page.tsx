@@ -94,8 +94,11 @@ export default function PricingPage() {
           After purchase, you will receive your account credentials via WhatsApp or Email within 5-15 minutes.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-lg">
-          <Link href="whatsapp://send?phone=8801623246317" className="px-6 py-3 bg-primary-container text-on-primary-container font-label-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-primary-container/20">
-            Contact Support
+          <Link href="whatsapp://send?phone=8801623246317" className="flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white font-label-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-[#25D366]/20">
+            <span className="material-symbols-outlined">chat</span>WhatsApp
+          </Link>
+          <Link href="https://www.facebook.com/share/18oT7nVZPU/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 bg-[#1877F2] text-white font-label-bold rounded-xl active:scale-95 transition-all shadow-lg shadow-[#1877F2]/20">
+            <span className="material-symbols-outlined">forum</span>Facebook
           </Link>
           <Link href="/support" className="px-6 py-3 border border-white/10 bg-white/5 text-white font-label-bold rounded-xl hover:bg-white/10 transition-all">
             How it Works

@@ -50,7 +50,16 @@ export default function SupportPage() {
               className="px-6 py-4 bg-[#25D366] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-[#25D366]/20"
             >
               <span className="material-symbols-outlined">chat</span>
-              Chat on WhatsApp
+              WhatsApp
+            </Link>
+            <Link
+              href="https://www.facebook.com/share/18oT7nVZPU/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-4 bg-[#1877F2] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-[#1877F2]/20"
+            >
+              <span className="material-symbols-outlined">forum</span>
+              Facebook
             </Link>
             <Link
               href="/"
