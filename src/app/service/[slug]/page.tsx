@@ -47,7 +47,9 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-label-bold text-white text-lg transition-all active:scale-95 shadow-xl bg-[#1877F2]"
               >
-                <span className="material-symbols-outlined">forum</span>
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 shrink-0">
+                  <path d="M12 2C6.477 2 2 6.145 2 11.26c0 2.923 1.523 5.517 3.868 7.227V22l3.528-1.928c.833.23 1.706.353 2.604.353 5.523 0 10-4.145 10-9.26S17.523 2 12 2zm1.096 12.338l-2.775-2.96-5.418 2.96 5.962-6.33 2.81 2.96 5.385-2.96-5.964 6.33z"/>
+                </svg>
                 Facebook
               </a>
             </div>
