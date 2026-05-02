@@ -149,7 +149,12 @@ export const services: Record<string, Service> = {
     badge: 'Ad-Free',
     description: 'Enjoy YouTube ad-free, with background play, downloads, and YouTube Music Premium included.',
     features: ['Ad-free videos', 'Background play', 'YouTube Music included', 'Download videos'],
-    plans: [{ duration: '1 Month', screens: '1 Account', price: 'Ask Price' }],
+    plans: [
+      { duration: '1 Month', screens: '1 Account', price: '120৳' },
+      { duration: '2 Months', screens: '1 Account', price: '240৳' },
+      { duration: '3 Months', screens: '1 Account', price: '350৳', popular: true },
+      { duration: '1 Year', screens: '1 Account', price: '1,300৳' }
+    ],
     image: '/images/youtube-premium.jpg',
   },
   ullu: {
@@ -171,8 +176,29 @@ export const services: Record<string, Service> = {
     badge: 'Movies',
     description: 'Watch exclusive Kooku web series, movies, and original content anytime.',
     features: ['Exclusive web series', 'Latest movies', 'HD quality', 'Mobile streaming'],
-    plans: [{ duration: '1 Month', screens: '1 Screen', price: 'Ask Price' }],
+    plans: [
+      { duration: '1 Month', screens: '1 Screen', price: '160৳' },
+      { duration: '3 Months', screens: '1 Screen', price: '450৳', popular: true },
+      { duration: '6 Months', screens: '1 Screen', price: '900৳' },
+      { duration: '12 Months', screens: '1 Screen', price: '1,800৳' }
+    ],
     image: '/images/kooku.jpg',
+  },
+  'disney-plus-hotstar': {
+    slug: 'disney-plus-hotstar',
+    name: 'Disney+ Hotstar',
+    color: '#1F3C73',
+    icon: 'star',
+    badge: 'Movies',
+    description: 'Stream live sports, Hotstar Specials, movies, and Disney blockbusters.',
+    features: ['Live Sports', 'Hotstar Specials', 'Disney Blockbusters', 'HD quality'],
+    plans: [
+      { duration: '1 Month', screens: '1 Screen', price: '190৳' },
+      { duration: '3 Months', screens: '1 Screen', price: '550৳', popular: true },
+      { duration: '6 Months', screens: '1 Screen', price: '1,100৳' },
+      { duration: '12 Months', screens: '1 Screen', price: '2,200৳' }
+    ],
+    image: '/images/netflix-hero.png', // Fallback, recommend changing later
   },
   bongo: {
     slug: 'bongo',

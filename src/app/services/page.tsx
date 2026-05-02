@@ -2,13 +2,14 @@ import Link from 'next/link';
 
 const streaming = [
   { slug: 'netflix', name: 'Netflix Premium', image: '/images/netflix-hero.png', badge: '4K HDR', badgeColor: '#E50914', tags: ['4 Screens', 'Unlimited'], price: '280৳', priceLabel: '1 Screen / Month', iconColor: '#E50914', href: '/netflix' },
-  { slug: 'youtube-premium', name: 'YouTube Premium', image: '/images/youtube-premium.jpg', badge: 'Ad-Free', badgeColor: '#FF0000', tags: ['Music Included', 'Background Play'], price: 'Ask Price', priceLabel: 'Contact Us', iconColor: '#FF0000', href: '/service/youtube-premium' },
+  { slug: 'youtube-premium', name: 'YouTube Premium', image: '/images/youtube-premium.jpg', badge: 'Ad-Free', badgeColor: '#FF0000', tags: ['Music Included', 'Background Play'], price: '120৳', priceLabel: '1 Month', iconColor: '#FF0000', href: '/service/youtube-premium' },
   { slug: 'prime-video', name: 'Amazon Prime', image: '/images/amazon-prime.jpg', badge: 'HD', badgeColor: '#00A8E1', tags: ['Prime Video', 'Music'], price: '120৳', priceLabel: '1 Screen / Month', iconColor: '#00A8E1', href: '/service/prime-video' },
   { slug: 'crunchyroll', name: 'Crunchyroll', image: '/images/crunchyroll.jpg', badge: 'Anime', badgeColor: '#F47521', tags: ['3 Screens', 'Offline View'], price: '160৳', priceLabel: '1 Screen / Month', iconColor: '#F47521', href: '/service/crunchyroll' },
   { slug: 'chorki', name: 'Chorki', image: '/images/chorki.jpg', badge: 'Bangla', badgeColor: '#8E24AA', tags: ['Local Content'], price: '170৳', priceLabel: '1 Month', iconColor: '#8E24AA', href: '/service/chorki' },
   { slug: 'ullu', name: 'Ullu Premium', image: '/images/ullu.jpg', badge: null, badgeColor: '', tags: ['Original Content'], price: 'Ask Price', priceLabel: 'Starting from', iconColor: '#FF6B35', href: '/service/ullu' },
-  { slug: 'kooku', name: 'Kooku Premium', image: '/images/kooku.jpg', badge: null, badgeColor: '', tags: ['Movies'], price: 'Ask Price', priceLabel: 'Starting from', iconColor: '#FF4500', href: '/service/kooku' },
+  { slug: 'kooku', name: 'Kooku Premium', image: '/images/kooku.jpg', badge: null, badgeColor: '', tags: ['Movies'], price: '160৳', priceLabel: '1 Month', iconColor: '#FF4500', href: '/service/kooku' },
   { slug: 'bongo', name: 'Bongo', image: '/images/bongo.jpg', badge: null, badgeColor: '', tags: ['Live TV'], price: 'Ask Price', priceLabel: 'Starting from', iconColor: '#E91E63', href: '/service/bongo' },
+  { slug: 'disney-plus-hotstar', name: 'Disney+ Hotstar', image: '/images/netflix-hero.png', badge: 'Movies', badgeColor: '#1F3C73', tags: ['Live Sports', 'Specials'], price: '190৳', priceLabel: '1 Month', iconColor: '#1F3C73', href: '/service/disney-plus-hotstar' },
 ];
 
 const gaming = [
@@ -104,7 +105,7 @@ export default function ServicesPage() {
                 <span className="material-symbols-outlined text-sm">stream</span> Streaming
               </h3>
               <div className="space-y-2">
-                {['Netflix', 'YouTube Premium', 'Amazon Prime', 'Crunchyroll', 'Ullu', 'Kooku', 'Chorki', 'Bongo'].map((item) => (
+                {['Netflix', 'YouTube Premium', 'Amazon Prime', 'Crunchyroll', 'Ullu', 'Kooku', 'Chorki', 'Bongo', 'Disney+ Hotstar'].map((item) => (
                   <label key={item} className="flex items-center gap-3 cursor-pointer group">
                     <input type="checkbox" className="w-4 h-4 rounded border-white/20 bg-white/5" />
                     <span className="text-sm text-tertiary group-hover:text-white transition-colors">{item}</span>
