@@ -289,7 +289,7 @@ export const services: Record<string, Service> = {
       { duration: 'Instant', screens: '1200 Coins', price: '1,470৳' },
       { duration: 'Instant', screens: '2600 Coins', price: '2,890৳', popular: true },
       { duration: 'Instant', screens: '6500 Coins', price: '7,000৳' },
-      { duration: 'Instant', screens: '13500 Coins', price: '14,500৳' },
+      { duration: 'Instant', screens: '1350 Coins', price: '14,500৳' },
     ],
     image: '/images/coins-generic.png',
   },
