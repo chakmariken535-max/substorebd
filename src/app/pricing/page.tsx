@@ -1,8 +1,28 @@
-'use client';
-
+import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
 import { services } from '@/lib/services';
+
+export const metadata: Metadata = {
+  title: 'Subscription Price Chart Bangladesh — Netflix, YouTube & More in BDT',
+  description:
+    'Compare prices for all digital subscriptions in Bangladesh. Netflix, YouTube Premium, Amazon Prime, Crunchyroll, Free Fire, PUBG UC, TikTok Coins & more — all in BDT. SubStoreBD.',
+  keywords: [
+    'netflix price bangladesh 2024',
+    'youtube premium price bd',
+    'streaming subscription price bangladesh',
+    'free fire diamond price bd',
+    'pubg uc price bangladesh',
+    'digital subscription price chart bd',
+  ],
+  alternates: { canonical: 'https://substorebd.com/pricing' },
+  openGraph: {
+    title: 'SubStoreBD Price Chart — All Subscriptions in BDT',
+    description: 'Compare all digital subscription prices in Bangladesh. Cheapest BDT rates. Instant delivery.',
+    url: 'https://substorebd.com/pricing',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SubStoreBD Price Chart' }],
+  },
+};
 
 export default function PricingPage() {
   // Convert services object to an array for easier mapping

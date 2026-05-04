@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { services, getWhatsAppLink, getRecommendationMessage } from '@/lib/services';
 import HowToBuy from '@/components/HowToBuy';
@@ -9,13 +10,62 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services[slug];
+  if (!service) return {};
+
+  const title = `Buy ${service.name} in Bangladesh — Best BDT Price`;
+  const description = `${service.description} Order ${service.name} in Bangladesh via WhatsApp. BDT prices, instant delivery. Pay with bKash, Nagad, or Rocket.`;
+
+  return {
+    title,
+    description,
+    keywords: [
+      `${service.name} bangladesh`,
+      `${service.name} bd price`,
+      `${service.name} buy bangladesh`,
+      `${service.name} bkash`,
+      `cheap ${service.name} bangladesh`,
+    ],
+    alternates: { canonical: `https://substorebd.com/service/${slug}` },
+    openGraph: {
+      title: `${service.name} Bangladesh — SubStoreBD`,
+      description,
+      url: `https://substorebd.com/service/${slug}`,
+      images: [{ url: '/og-image.png', width: 1200, height: 630, alt: `${service.name} Bangladesh` }],
+    },
+  };
+}
+
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = services[slug];
   if (!service) notFound();
 
+  const productJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `${service.name} Subscription Bangladesh`,
+    description: service.description,
+    brand: { '@type': 'Brand', name: service.name },
+    offers: service.plans.map((plan) => ({
+      '@type': 'Offer',
+      name: `${plan.duration} / ${plan.screens}`,
+      price: plan.price.replace(/[৳,]/g, '').trim(),
+      priceCurrency: 'BDT',
+      availability: 'https://schema.org/InStock',
+      seller: { '@type': 'Organization', name: 'SubStoreBD' },
+    })),
+  };
+
+
+
   return (
     <main className="pt-20">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
       {/* Hero */}
       <section className="relative h-[45vh] md:h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">

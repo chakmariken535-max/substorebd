@@ -1,9 +1,78 @@
+import type { Metadata } from 'next';
 import { getWhatsAppLink } from '@/lib/services';
 import HowToBuy from '@/components/HowToBuy';
+
+export const metadata: Metadata = {
+  title: 'Netflix Premium Subscription Bangladesh — Cheapest BDT Price',
+  description:
+    'Buy Netflix Premium in Bangladesh at the lowest price in BDT. 4K HDR, 5 screens, instant WhatsApp delivery. Plans from ৳280/month. Pay via bKash, Nagad, Rocket.',
+  keywords: [
+    'netflix subscription bangladesh',
+    'netflix premium bd',
+    'netflix price bangladesh',
+    'netflix 4k bangladesh',
+    'cheap netflix bangladesh',
+    'netflix bkash payment',
+    'netflix bd 2024',
+  ],
+  alternates: { canonical: 'https://substorebd.com/netflix' },
+  openGraph: {
+    title: 'Netflix Premium Bangladesh — From ৳280/month | SubStoreBD',
+    description:
+      'Watch Netflix in 4K on up to 5 screens. Cheapest BDT prices in Bangladesh. Instant delivery via WhatsApp.',
+    url: 'https://substorebd.com/netflix',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Netflix Premium Bangladesh' }],
+  },
+};
+
+const netflixProductJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Netflix Premium Subscription Bangladesh',
+  description:
+    'Netflix Premium subscription in Bangladesh. Watch unlimited movies, TV shows, and documentaries in 4K Ultra HD with HDR. Multi-screen support. Instant delivery.',
+  brand: { '@type': 'Brand', name: 'Netflix' },
+  offers: [
+    { '@type': 'Offer', name: '1 Screen / 1 Month', price: '280', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
+    { '@type': 'Offer', name: '2 Screens / 1 Month', price: '550', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
+    { '@type': 'Offer', name: '3 Screens / 1 Month', price: '840', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
+    { '@type': 'Offer', name: '4 Screens / 1 Month', price: '1100', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
+    { '@type': 'Offer', name: '5 Screens / 1 Month', price: '1380', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
+  ],
+};
+
+const netflixFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do I cancel my Netflix subscription?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What can I watch on Netflix in Bangladesh?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How much does Netflix cost in Bangladesh?',
+      acceptedAnswer: { '@type': 'Answer', text: 'SubStoreBD offers Netflix Premium starting from ৳280 for 1 screen per month, up to ৳1,380 for 5 screens. Pay via bKash, Nagad, or Rocket and get instant delivery via WhatsApp.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Netflix good for kids in Bangladesh?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.' },
+    },
+  ],
+};
 
 export default function NetflixPage() {
   return (
     <main className="pt-20">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(netflixProductJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(netflixFaqJsonLd) }} />
       {/* Hero Section */}
       <section className="relative h-[55vh] md:h-[716px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">

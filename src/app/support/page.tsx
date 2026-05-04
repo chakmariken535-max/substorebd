@@ -1,4 +1,52 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'How to Buy — Order Netflix & Game Credits via WhatsApp in Bangladesh',
+  description:
+    'Step-by-step guide to buying digital subscriptions from SubStoreBD. Choose a service, select a plan, pay via bKash/Nagad/Rocket, and receive your subscription instantly via WhatsApp.',
+  keywords: [
+    'how to buy netflix bangladesh',
+    'buy streaming subscription bangladesh',
+    'bkash nagad netflix payment',
+    'substorebd how to order',
+    'whatsapp subscription delivery bangladesh',
+  ],
+  alternates: { canonical: 'https://substorebd.com/support' },
+  openGraph: {
+    title: 'How to Buy Subscriptions in Bangladesh | SubStoreBD',
+    description: 'Simple 5-step process to order Netflix, gaming credits & more. Pay via bKash, Nagad or Rocket.',
+    url: 'https://substorebd.com/support',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'How to Buy — SubStoreBD' }],
+  },
+};
+
+const supportFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How long does delivery take for subscriptions in Bangladesh?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Most orders are delivered within 5-15 minutes after payment verification via WhatsApp.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is it safe to buy subscriptions from SubStoreBD?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Absolutely. SubStoreBD is a trusted provider with hundreds of satisfied customers across Bangladesh. We offer full replacement warranty.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What payment methods does SubStoreBD accept?',
+      acceptedAnswer: { '@type': 'Answer', text: 'We accept bKash, Nagad, and Rocket (Personal and Merchant accounts) for all orders.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What if my subscription account stops working?',
+      acceptedAnswer: { '@type': 'Answer', text: 'We provide full replacement warranty for the entire duration of your subscription. Contact us via WhatsApp immediately and we will resolve it.' },
+    },
+  ],
+};
 
 export default function SupportPage() {
   const steps = [
@@ -11,6 +59,7 @@ export default function SupportPage() {
 
   return (
     <main className="pt-24 md:pt-32 pb-16 px-4 md:px-8 max-w-[1200px] mx-auto min-h-screen w-full">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(supportFaqJsonLd) }} />
       {/* Header */}
       <div className="mb-10 md:mb-16 text-center max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black text-white mb-3 tracking-tight">How to Buy</h1>

@@ -1,4 +1,39 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Buy Netflix, YouTube Premium & Game Credits in Bangladesh | SubStoreBD',
+  description:
+    'Shop the cheapest Netflix, YouTube Premium, Amazon Prime, Crunchyroll, Free Fire Diamonds, PUBG UC, TikTok Coins & more in Bangladesh. BDT prices. Instant WhatsApp delivery.',
+  alternates: { canonical: 'https://substorebd.com/' },
+  openGraph: {
+    title: 'SubStoreBD — Premium Subscriptions at the Best BDT Prices',
+    description:
+      'Bangladesh\'s #1 digital subscription store. Netflix, YouTube, Gaming Credits & Social Coins — cheapest prices, instant delivery.',
+    url: 'https://substorebd.com/',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'SubStoreBD Product Catalog' }],
+  },
+};
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'SubStoreBD Digital Subscriptions & Game Credits',
+  url: 'https://substorebd.com',
+  numberOfItems: 21,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Netflix Premium Bangladesh', url: 'https://substorebd.com/netflix' },
+    { '@type': 'ListItem', position: 2, name: 'YouTube Premium Bangladesh', url: 'https://substorebd.com/service/youtube-premium' },
+    { '@type': 'ListItem', position: 3, name: 'Amazon Prime Video Bangladesh', url: 'https://substorebd.com/service/prime-video' },
+    { '@type': 'ListItem', position: 4, name: 'Crunchyroll Bangladesh', url: 'https://substorebd.com/service/crunchyroll' },
+    { '@type': 'ListItem', position: 5, name: 'Chorki Subscription Bangladesh', url: 'https://substorebd.com/service/chorki' },
+    { '@type': 'ListItem', position: 6, name: 'Telegram Premium Bangladesh', url: 'https://substorebd.com/service/telegram-premium' },
+    { '@type': 'ListItem', position: 7, name: 'Free Fire Diamonds Bangladesh', url: 'https://substorebd.com/service/free-fire' },
+    { '@type': 'ListItem', position: 8, name: 'PUBG Mobile UC Bangladesh', url: 'https://substorebd.com/service/pubg-mobile' },
+    { '@type': 'ListItem', position: 9, name: 'TikTok Coins Bangladesh', url: 'https://substorebd.com/service/tiktok-coins' },
+    { '@type': 'ListItem', position: 10, name: 'Bigo Diamonds Bangladesh', url: 'https://substorebd.com/service/bigo-diamonds' },
+  ],
+};
 
 const streaming = [
   { slug: 'netflix', name: 'Netflix Premium', image: '/images/netflix-hero.png', badge: '4K HDR', badgeColor: '#E50914', tags: ['4 Screens', 'Unlimited'], price: '280৳', priceLabel: '1 Screen / Month', iconColor: '#E50914', href: '/netflix' },
@@ -74,6 +109,10 @@ function ProductCard({ item }: { item: typeof streaming[0] }) {
 export default function ServicesPage() {
   return (
     <main className="pt-24 md:pt-32 pb-16 px-4 md:px-8 max-w-[1200px] mx-auto min-h-screen w-full">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
       {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl md:text-5xl font-black text-white mb-2 tracking-tight">Our Services</h1>
