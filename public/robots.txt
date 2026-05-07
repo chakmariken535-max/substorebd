@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://substorebd.com/sitemap.xml
+
+# Canonical domain: https://substorebd.com (non-WWW)
+# www.substorebd.com redirects to substorebd.com via 301

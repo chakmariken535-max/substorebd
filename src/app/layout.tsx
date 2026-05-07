@@ -12,7 +12,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://substorebd.com"),
+  metadataBase: new URL("https://substorebd.com"), // canonical: non-WWW
   title: {
     default: "SubStoreBD — Buy Netflix, YouTube & Game Credits in Bangladesh",
     template: "%s | SubStoreBD",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://substorebd.com",
+    canonical: "https://substorebd.com/", // trailing slash = canonical root, avoids /index.html duplicate
   },
   openGraph: {
     type: "website",

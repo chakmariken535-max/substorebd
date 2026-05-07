@@ -29,6 +29,7 @@ const netflixProductJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: 'Netflix Premium Subscription Bangladesh',
+  image: 'https://substorebd.com/images/netflix-hero.png',
   description:
     'Netflix Premium subscription in Bangladesh. Watch unlimited movies, TV shows, and documentaries in 4K Ultra HD with HDR. Multi-screen support. Instant delivery.',
   brand: { '@type': 'Brand', name: 'Netflix' },

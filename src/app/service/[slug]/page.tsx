@@ -49,6 +49,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: `${service.name} Subscription Bangladesh`,
+    image: `https://substorebd.com${service.image}`,
     description: service.description,
     brand: { '@type': 'Brand', name: service.name },
     offers: service.plans.map((plan) => ({
