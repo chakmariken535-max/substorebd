@@ -5,7 +5,7 @@ export default function FloatingContact() {
   return (
     <div className="fixed bottom-0 left-0 w-full md:bottom-6 md:left-auto md:right-6 md:w-auto flex md:flex-col p-3 md:p-0 gap-2 z-[100] bg-black/80 md:bg-transparent backdrop-blur-xl md:backdrop-blur-none border-t border-white/10 md:border-none">
       <Link
-        href="whatsapp://send?phone=8801623246317"
+        href="whatsapp://send?phone=8801604929025"
         className="flex-1 md:flex-none flex items-center justify-center gap-2 py-3 px-5 bg-[#25D366] text-white font-bold rounded-xl md:rounded-full active:scale-95 transform transition-all shadow-xl shadow-[#25D366]/40 hover:bg-[#20b958]"
       >
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 md:w-6 md:h-6 shrink-0">

@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = '8801623246317';
+export const WHATSAPP_NUMBER = '8801604929025';
 
 // Opens native WhatsApp app (not web). Falls back gracefully on desktop.
 export function getWhatsAppLink(service: string, plan: string, price: string) {

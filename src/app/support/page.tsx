@@ -95,7 +95,7 @@ export default function SupportPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="whatsapp://send?phone=8801623246317"
+              href="whatsapp://send?phone=8801604929025"
               className="px-6 py-4 bg-[#25D366] text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-[#25D366]/20"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 shrink-0">

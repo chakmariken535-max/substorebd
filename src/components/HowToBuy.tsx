@@ -7,7 +7,7 @@ interface HowToBuyProps {
 export default function HowToBuy({ accentColor = '#E50914' }: HowToBuyProps) {
   const steps = [
     { icon: 'touch_app', label: 'Click "Buy Now"', desc: 'Tap the button for your plan' },
-    { icon: 'chat', label: 'Chat on WhatsApp', desc: 'Message us on 01623246317' },
+    { icon: 'chat', label: 'Chat on WhatsApp', desc: 'Message us on 01604929025' },
     { icon: 'check_circle', label: 'Get Instant Access', desc: 'Delivered in 5–15 minutes' },
   ];
 

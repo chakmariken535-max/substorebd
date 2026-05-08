@@ -87,7 +87,7 @@ const organizationJsonLd = {
     "SubStoreBD is Bangladesh's leading digital subscription marketplace offering Netflix, YouTube Premium, gaming credits, and social coins at the best BDT prices.",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+8801623246317",
+    telephone: "+8801604929025",
     contactType: "customer service",
     availableLanguage: ["Bengali", "English"],
     areaServed: "BD",
