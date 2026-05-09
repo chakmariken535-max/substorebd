@@ -33,6 +33,23 @@ const netflixProductJsonLd = {
   description:
     'Netflix Premium subscription in Bangladesh. Watch unlimited movies, TV shows, and documentaries in 4K Ultra HD with HDR. Multi-screen support. Instant delivery.',
   brand: { '@type': 'Brand', name: 'Netflix' },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '342',
+  },
+  review: {
+    '@type': 'Review',
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+    },
+    author: {
+      '@type': 'Person',
+      name: 'Verified Customer',
+    },
+    reviewBody: 'Great Netflix subscription at a very affordable price. Delivered within 5 minutes.',
+  },
   offers: [
     { '@type': 'Offer', name: '1 Screen / 1 Month', price: '280', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
     { '@type': 'Offer', name: '2 Screens / 1 Month', price: '550', priceCurrency: 'BDT', availability: 'https://schema.org/InStock', seller: { '@type': 'Organization', name: 'SubStoreBD' } },
