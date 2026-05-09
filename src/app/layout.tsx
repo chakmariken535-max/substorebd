@@ -14,7 +14,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 export const metadata: Metadata = {
   metadataBase: new URL("https://substorebd.com"), // canonical: non-WWW
   title: {
-    default: "SubStoreBD — Buy Netflix, YouTube & Game Credits in Bangladesh",
+    default: "Buy Netflix & Game Credits | SubStoreBD",
     template: "%s | SubStoreBD",
   },
   description:
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://substorebd.com",
     siteName: "SubStoreBD",
-    title: "SubStoreBD — Buy Netflix, YouTube & Game Credits in Bangladesh",
+    title: "Buy Netflix & Game Credits | SubStoreBD",
     description:
       "Bangladesh's #1 digital subscription store. Cheapest Netflix, YouTube Premium, Free Fire, PUBG UC, TikTok Coins & more. BDT prices. Instant WhatsApp delivery.",
     images: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SubStoreBD — Buy Netflix, YouTube & Game Credits in Bangladesh",
+    title: "Buy Netflix & Game Credits | SubStoreBD",
     description:
       "Bangladesh's #1 digital subscription store. Cheapest BDT prices. Instant delivery via WhatsApp.",
     images: ["/og-image.png"],

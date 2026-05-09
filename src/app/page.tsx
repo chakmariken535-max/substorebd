@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Buy Netflix, YouTube Premium & Game Credits in Bangladesh | SubStoreBD',
+  title: 'Buy Netflix & Game Credits in BD',
   description:
     'Shop the cheapest Netflix, YouTube Premium, Amazon Prime, Crunchyroll, Free Fire Diamonds, PUBG UC, TikTok Coins & more in Bangladesh. BDT prices. Instant WhatsApp delivery.',
   alternates: { canonical: 'https://substorebd.com/' },

@@ -32,7 +32,7 @@ export async function generateMetadata(
     ],
     alternates: { canonical: `https://substorebd.com/service/${slug}` },
     openGraph: {
-      title: `${service.name} Bangladesh — SubStoreBD`,
+      title: `${service.name} BD — SubStoreBD`,
       description,
       url: `https://substorebd.com/service/${slug}`,
       images: [{ url: '/og-image.png', width: 1200, height: 630, alt: `${service.name} Bangladesh` }],

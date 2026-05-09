@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How to Buy — Order Netflix & Game Credits via WhatsApp in Bangladesh',
+  title: 'How to Buy Subscriptions & Game Credits',
   description:
     'Step-by-step guide to buying digital subscriptions from SubStoreBD. Choose a service, select a plan, pay via bKash/Nagad/Rocket, and receive your subscription instantly via WhatsApp.',
   keywords: [
