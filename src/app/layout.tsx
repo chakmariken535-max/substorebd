@@ -71,9 +71,9 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/icon-192.png",
+    shortcut: "/icon-192.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -82,7 +82,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "SubStoreBD",
   url: "https://substorebd.com",
-  logo: "https://substorebd.com/favicon.png",
+  logo: "https://substorebd.com/icon-192.png",
   description:
     "SubStoreBD is Bangladesh's leading digital subscription marketplace offering Netflix, YouTube Premium, gaming credits, and social coins at the best BDT prices.",
   contactPoint: {
@@ -106,8 +106,8 @@ export default function RootLayout({
       className={`${beVietnamPro.variable} h-full antialiased dark`}
     >
       <head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" href="/icon-192.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
