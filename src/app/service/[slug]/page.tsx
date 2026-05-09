@@ -18,7 +18,7 @@ export async function generateMetadata(
   if (!service) return {};
 
   const title = `Buy ${service.name} in Bangladesh — Best BDT Price`;
-  const description = `${service.description} Order ${service.name} in Bangladesh via WhatsApp. BDT prices, instant delivery. Pay with bKash, Nagad, or Rocket.`;
+  const description = `${service.description} Order in BD via WhatsApp. Instant delivery.`;
 
   return {
     title,

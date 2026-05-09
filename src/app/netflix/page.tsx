@@ -5,7 +5,7 @@ import HowToBuy from '@/components/HowToBuy';
 export const metadata: Metadata = {
   title: 'Netflix Premium Subscription in BD',
   description:
-    'Buy Netflix Premium in Bangladesh at the lowest price in BDT. 4K HDR, 5 screens, instant WhatsApp delivery. Plans from ৳280/month. Pay via bKash, Nagad, Rocket.',
+    'Buy Netflix Premium in Bangladesh at the lowest BDT price. 4K HDR, 5 screens, instant WhatsApp delivery. Plans from ৳280/month. Pay via bKash/Nagad.',
   keywords: [
     'netflix subscription bangladesh',
     'netflix premium bd',

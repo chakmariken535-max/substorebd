@@ -6,7 +6,7 @@ import { services } from '@/lib/services';
 export const metadata: Metadata = {
   title: 'Subscription Price Chart (BDT)',
   description:
-    'Compare prices for all digital subscriptions in Bangladesh. Netflix, YouTube Premium, Amazon Prime, Crunchyroll, Free Fire, PUBG UC, TikTok Coins & more — all in BDT. SubStoreBD.',
+    'Compare prices for all digital subscriptions in Bangladesh. Netflix, YouTube Premium, Free Fire, PUBG UC & more — all in BDT. SubStoreBD.',
   keywords: [
     'netflix price bangladesh 2024',
     'youtube premium price bd',

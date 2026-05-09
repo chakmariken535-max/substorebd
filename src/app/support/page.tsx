@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'How to Buy Subscriptions & Game Credits',
   description:
-    'Step-by-step guide to buying digital subscriptions from SubStoreBD. Choose a service, select a plan, pay via bKash/Nagad/Rocket, and receive your subscription instantly via WhatsApp.',
+    'Step-by-step guide to buying digital subscriptions from SubStoreBD. Choose a plan, pay via bKash/Nagad/Rocket, and get instant delivery via WhatsApp.',
   keywords: [
     'how to buy netflix bangladesh',
     'buy streaming subscription bangladesh',

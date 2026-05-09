@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Buy Netflix & Game Credits in BD',
   description:
-    'Shop the cheapest Netflix, YouTube Premium, Amazon Prime, Crunchyroll, Free Fire Diamonds, PUBG UC, TikTok Coins & more in Bangladesh. BDT prices. Instant WhatsApp delivery.',
+    'Shop the cheapest Netflix, YouTube Premium, Free Fire Diamonds, PUBG UC & more in Bangladesh. Best BDT prices and instant WhatsApp delivery.',
   alternates: { canonical: 'https://substorebd.com/' },
   openGraph: {
     title: 'SubStoreBD — Premium Subscriptions at the Best BDT Prices',

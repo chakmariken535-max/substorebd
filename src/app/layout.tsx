@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | SubStoreBD",
   },
   description:
-    "SubStoreBD is Bangladesh's #1 digital subscription store. Buy Netflix, YouTube Premium, Amazon Prime, Crunchyroll, Free Fire Diamonds, PUBG UC, TikTok Coins & more — cheapest BDT prices, instant WhatsApp delivery.",
+    "Bangladesh's #1 digital subscription store. Buy Netflix, YouTube, Game Credits & Social Coins at the cheapest BDT prices. Instant WhatsApp delivery.",
   keywords: [
     "netflix subscription bangladesh",
     "netflix bd price",
