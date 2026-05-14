@@ -36,22 +36,27 @@ export default function Footer() {
           </div>
 
           <div className="pt-4">
-            <h4 className="text-white font-bold uppercase tracking-wider mb-4">Developer</h4>
-            <div className="flex items-center gap-3 bg-white/5 px-4 py-3 rounded-xl border border-white/10 group hover:border-[#E50914]/30 hover:bg-white/10 transition-all duration-300">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#E50914] to-[#ff6b35] flex items-center justify-center text-white text-xs font-black shrink-0">
-                MC
+            <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <summary className="list-none cursor-pointer flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl border border-white/10 hover:border-[#E50914]/30 hover:bg-white/10 transition-all duration-300 w-max">
+                <span className="material-symbols-outlined text-sm text-[#E50914]">code</span>
+                <span className="text-white font-bold text-xs uppercase tracking-wider">Developer Info</span>
+                <span className="material-symbols-outlined text-gray-500 transition-transform duration-300 group-open:rotate-180 ml-2">expand_more</span>
+              </summary>
+              <div className="mt-3 flex items-center gap-3 bg-white/5 px-4 py-3 rounded-xl border border-white/10 group-hover:border-[#E50914]/30 group-hover:bg-white/10 transition-all duration-300">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#E50914] to-[#ff6b35] flex items-center justify-center text-white text-xs font-black shrink-0">
+                  MC
+                </div>
+                <div className="text-left flex-grow min-w-0">
+                  <p className="text-white font-bold text-sm leading-none mb-1 truncate">Madesh Chakma</p>
+                  <a
+                    href="mailto:madeshchakma@gmail.com"
+                    className="text-[10px] text-gray-500 hover:text-[#E50914] transition-colors block truncate"
+                  >
+                    madeshchakma@gmail.com
+                  </a>
+                </div>
               </div>
-              <div className="text-left flex-grow min-w-0">
-                <p className="text-white font-bold text-sm leading-none mb-1 truncate">Madesh Chakma</p>
-                <a
-                  href="mailto:madeshchakma@gmail.com"
-                  className="text-[10px] text-gray-500 hover:text-[#E50914] transition-colors block truncate"
-                >
-                  madeshchakma@gmail.com
-                </a>
-              </div>
-              <span className="material-symbols-outlined text-gray-600 group-hover:text-[#E50914] transition-colors text-base">code</span>
-            </div>
+            </details>
           </div>
         </div>
       </div>
